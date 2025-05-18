@@ -4,12 +4,10 @@ const IS_PREVIEW = process.env.APP_VARIANT === 'preview';
 
 const getUniqueIdentifier = () => {
   if (IS_DEV) {
-    console.log(process.env.PACKAGE_NAME_DEV);
     return process.env.PACKAGE_NAME_DEV;
   }
 
   if (IS_PREVIEW) {
-    console.log(process.env.PACKAGE_NAME_PREVIEW);
     return process.env.PACKAGE_NAME_PREVIEW;
   }
 
@@ -18,13 +16,10 @@ const getUniqueIdentifier = () => {
 
 const getAppName = () => {
   if (IS_DEV) {
-    console.log(process.env.APP_NAME_DEV);
-
     return process.env.APP_NAME_DEV;
   }
 
   if (IS_PREVIEW) {
-    console.log(process.env.APP_NAME_PREVIEW);
     return process.env.APP_NAME_PREVIEW;
   }
 
