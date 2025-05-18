@@ -56,5 +56,5 @@ cd new-app
 
 rm -rf .git
 
-npm install
+yarn install
 
